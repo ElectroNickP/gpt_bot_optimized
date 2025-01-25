@@ -1,0 +1,3 @@
+openai==latest
+aiogram==latest
+python-dotenv==latest

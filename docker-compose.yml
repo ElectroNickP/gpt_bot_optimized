@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  telegram_bot:
+    container_name: gpt_bot
+    build: .
+    restart: always
+    env_file: .env
+    volumes:
+      - ./logs:/app/logs
+    deploy:
+      resources:
+        limits:
+          memory: 256M
